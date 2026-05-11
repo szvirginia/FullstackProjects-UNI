@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exam Grade Analyzer</title>
+</head>
+
+<body>
+    <h2 id="get-average">Osztályátlag: Betöltés...</h2>
+
+    <form id="addForm">
+        Név: <input type="text" id="name" placeholder="Írd be a nevet!" required><br>
+        Tantárgy: <input type="text" id="subject" placeholder="Írd be a tantárgyat!" required><br>
+        Érdemjegy:
+        <select id="gradeType" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select><br><br>
+        <button type="submit">Hozzáadás</button>
+    </form>
+    <hr>
+
+    <table>
+        <thead>
+            <tr>
+                <td>Név</td>
+                <td>Tantárgy</td>
+                <td>Érdemjegy</td>
+                <td>Műveletek</td>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

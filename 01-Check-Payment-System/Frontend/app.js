@@ -25,6 +25,12 @@ async function loadData() {
 
         document.getElementById("tableBody").innerHTML = html;
 
+        const sumResponse = await fetch("http://localhost:5097/api/CheckPayment/sum-all-payment");
+        if (sumResponse.ok) {
+            const sumData = await sumResponse.text();
+            document.getElementById("sum-all-payment").innerText = `Feldolgozott összeg: ${sumData} Ft`
+        }
+
         console.log(datas);
     } catch (error) {
         console.error("Error: ", error)
