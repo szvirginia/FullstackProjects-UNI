@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Check Payment System</title>
+</head>
+
+<body>
+    <h2 id="sum-all-payment">Feldolgozott összeg: Betöltés...</h2>
+
+    <form id="addForm">
+        Név: <input type="text" id="name" required placeholder="Add meg a nevet!"><br>
+        Összeg: <input type="text" id="paid" required placeholder="Add meg az összeget!"><br>
+        Dátum:<input type="date" id="date" required placeholder="Add meg a dátumot!"><br>
+        Típus:
+        <select id="paymentType">
+            <option value="0">Rezsi</option>
+            <option value="1">Bírság</option>
+            <option value="2">Adó</option>
+            <option value="3">Egyéb</option>
+        </select><br><br>
+        Feldogozva <input type="checkbox" id="isProcessed"><br>
+        <button type="submit">Hozzáadás</button>
+    </form>
+    <hr>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Név</th>
+                <th>Összeg</th>
+                <th>Dátum</th>
+                <th>Típus</th>
+                <th>Feldolgozva</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

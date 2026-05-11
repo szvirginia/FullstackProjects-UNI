@@ -1,0 +1,26 @@
+table,
+th,
+td {
+    border-collapse: collapse;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+input {
+    margin: 10px;
+    background-color: beige;
+    border-radius: 5px;
+}
+
+button {
+    color: beige;
+    background-color: rgb(46, 22, 22);
+    border-radius: 5px;
+    font-size: large;
+}
+
+#paymentType {
+    color: beige;
+    background-color: rgb(46, 22, 22, 0.5);
+    border-radius: 5px;
+}
