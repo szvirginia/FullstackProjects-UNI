@@ -1,0 +1,29 @@
+table,
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+    background-color: rgb(232, 223, 210, 0.4);
+}
+
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+form {
+    margin: 10px;
+}
+
+input {
+    margin: 10px;
+    background-color: rgb(232, 223, 210, 0.4);
+    border-radius: 5px;
+}
+
+button {
+    background-color: rgba(221, 142, 32, 0.4);
+    border-radius: 5px;
+    font-size: large;
+}

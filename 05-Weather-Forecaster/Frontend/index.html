@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Forecast</title>
+</head>
+
+<body>
+    <h2 id="max-degree">Eddigi hőségrekord: Betöltés...</h2>
+
+    <form id="addForm">
+        Dátum: <input type="date" id="date"><br>
+        Hőmérséklet: <input type="text" id="degree" placeholder="pl. 37 (fok)" required><br>
+        Szélsebesség: <input type="text" id="wind" placeholder="pl. 7 (km/h)" required><br>
+        Típus:
+        <select id="weatherType" required>
+            <option value="1">Napos</option>
+            <option value="2">Száraz</option>
+            <option value="3">Esős</option>
+            <option value="4">Havas</option>
+        </select><br><br>
+        <button type="submit">Hozzáadás</button>
+    </form>
+    <hr>
+
+    <table>
+        <thead>
+            <tr>
+                <td>Dátum</td>
+                <td>Hőmérséklet</td>
+                <td>Szélsebesség</td>
+                <td>Típus</td>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+
+
+    <script src=" app.js"></script>
+</body>
+
+</html>

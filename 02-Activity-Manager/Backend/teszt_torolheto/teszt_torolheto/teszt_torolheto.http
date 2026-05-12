@@ -1,0 +1,6 @@
+@teszt_torolheto_HostAddress = http://localhost:5113
+
+GET {{teszt_torolheto_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

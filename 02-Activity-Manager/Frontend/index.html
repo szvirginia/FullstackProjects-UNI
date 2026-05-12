@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Activity Manager</title>
+</head>
+
+<body>
+    <h2 id="sum-duration">Összes tevékenységgel töltött idő: Betöltés...</h2>
+
+    <form id="addForm">
+        Tevékenység neve: <input type="text" id="taskName" required><br>
+        Időtartam: <input type="text" id="duration" required><br>
+        Prioritás:
+        <select id="priority" required>
+            <option value="1">Alacsony(1)</option>
+            <option value="2">Közepes(2)</option>
+            <option value="3">Magas(3)</option>
+        </select>
+        Befejezve: <input type="checkbox" id="isFinished"><br><br>
+        <button type="submit">Hozzáadás</button>
+    </form>
+    <hr>
+
+    <table>
+        <thead>
+            <tr>
+                <td>Tevékenység neve</td>
+                <td>Időtartam</td>
+                <td>Prioritás</td>
+                <td>Befejezve</td>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
